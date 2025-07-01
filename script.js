@@ -10,7 +10,7 @@ function generateCodes() {
     return;
   }
 
-  const lines = input.split("\n").filter(line => line.trim() !== "");
+  const lines = input.split(/\s+/).filter(word => word.trim() !== "");
 
   lines.forEach(text => {
     const container = document.createElement("div");
