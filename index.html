@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tạo mã QR/Barcode</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tạo mã QR hoặc mã vạch</h1>
+
+    <textarea id="input" placeholder="Nhập mã barcode..."></textarea>
+
+    <div class="options">     
+      <label><input type="radio" name="type" value="qr" checked> Mã QR</label>
+      <label><input type="radio" name="type" value="barcode"> Mã vạch</label>     
+    </div>
+
+    <button onclick="generateCodes()">Tạo mã barcode</button>
+
+    <div id="output-list"></div>
+  </div>
+
+  <!-- Thư viện -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
